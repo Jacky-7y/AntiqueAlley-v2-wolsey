@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #2e2a26;
+  --color-brand-gold: #b08d57;
+  --color-brand-cream: #f5f1e8;
+  --color-brand-olive: #6b705c;
+  --font-serif: "Georgia", serif;
+}
+
+@layer base {
+  body { @apply bg-brand-cream text-brand-dark font-serif leading-relaxed; }
+}
+
+@layer components {
+  .btn-primary { @apply bg-brand-gold px-[18px] py-[10px] text-white rounded-[4px] hover:opacity-90 transition-opacity inline-block no-underline; }
+  .container-custom { @apply w-[90%] max-w-[1200px] mx-auto py-[60px]; }
+}
